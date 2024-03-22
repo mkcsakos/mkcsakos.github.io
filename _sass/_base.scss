@@ -1,0 +1,56 @@
+@import "variables";
+
+header {
+    background-color: $header-background-color;
+    border-bottom: 1px solid $header-border-bottom-color;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.site-header-links {
+    float: right;
+    margin-right: 15px;
+}
+
+.site-header-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: $link-color;
+}
+
+.navigation a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: $link-color;
+}
+
+body {
+    font-family: $font-stack;
+    line-height: $base-line-height;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+        margin-bottom: $base-margin-bottom;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
+
+// Example of how you might style links with a variable
+a {
+    color: $link-color;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
